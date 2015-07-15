@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E1589CD1B547EB1008ACF1E /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E1589CC1B547EB1008ACF1E /* CustomTableViewCell.m */; };
 		3E2E6CD41B51A87C000B571C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E2E6CD31B51A87C000B571C /* main.m */; };
 		3E2E6CD71B51A87C000B571C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E2E6CD61B51A87C000B571C /* AppDelegate.m */; };
 		3E2E6CDA1B51A87C000B571C /* Clairify.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3E2E6CD81B51A87C000B571C /* Clairify.xcdatamodeld */; };
-		3E2E6CDD1B51A87C000B571C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E2E6CDC1B51A87C000B571C /* ViewController.m */; };
-		3E2E6CE01B51A87C000B571C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E2E6CDE1B51A87C000B571C /* Main.storyboard */; };
+		3E2E6CDD1B51A87C000B571C /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E2E6CDC1B51A87C000B571C /* RootViewController.m */; };
 		3E2E6CE21B51A87C000B571C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E2E6CE11B51A87C000B571C /* Images.xcassets */; };
 		3E2E6CE51B51A87C000B571C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E2E6CE31B51A87C000B571C /* LaunchScreen.xib */; };
 		3E2E6CF11B51A87C000B571C /* ClairifyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E2E6CF01B51A87C000B571C /* ClairifyTests.m */; };
+		3E68C6C81B534BBC00451848 /* WeatherInfoDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E68C6C71B534BBC00451848 /* WeatherInfoDownloader.m */; };
+		3E79ABF71B51B75B0043613C /* CityReaderFromFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E79ABF61B51B75B0043613C /* CityReaderFromFile.m */; };
+		3E79ABF91B51BD4B0043613C /* gistfile1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3E79ABF81B51BD4A0043613C /* gistfile1.txt */; };
+		3E79ABFC1B51C0C60043613C /* AddCityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E79ABFB1B51C0C60043613C /* AddCityViewController.m */; };
+		3EF0B77A1B523394005098EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EF0B7791B523394005098EC /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,20 +33,29 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3E1589CB1B547EB1008ACF1E /* CustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
+		3E1589CC1B547EB1008ACF1E /* CustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
 		3E2E6CCE1B51A87C000B571C /* Clairify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clairify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E2E6CD21B51A87C000B571C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E2E6CD31B51A87C000B571C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3E2E6CD51B51A87C000B571C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3E2E6CD61B51A87C000B571C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3E2E6CD91B51A87C000B571C /* Clairify.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Clairify.xcdatamodel; sourceTree = "<group>"; };
-		3E2E6CDB1B51A87C000B571C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		3E2E6CDC1B51A87C000B571C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		3E2E6CDF1B51A87C000B571C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3E2E6CDB1B51A87C000B571C /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		3E2E6CDC1B51A87C000B571C /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		3E2E6CE11B51A87C000B571C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3E2E6CE41B51A87C000B571C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		3E2E6CEA1B51A87C000B571C /* ClairifyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClairifyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E2E6CEF1B51A87C000B571C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E2E6CF01B51A87C000B571C /* ClairifyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClairifyTests.m; sourceTree = "<group>"; };
+		3E68C6C61B534BBC00451848 /* WeatherInfoDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherInfoDownloader.h; sourceTree = "<group>"; };
+		3E68C6C71B534BBC00451848 /* WeatherInfoDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherInfoDownloader.m; sourceTree = "<group>"; };
+		3E79ABF51B51B75B0043613C /* CityReaderFromFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityReaderFromFile.h; sourceTree = "<group>"; };
+		3E79ABF61B51B75B0043613C /* CityReaderFromFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityReaderFromFile.m; sourceTree = "<group>"; };
+		3E79ABF81B51BD4A0043613C /* gistfile1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gistfile1.txt; sourceTree = "<group>"; };
+		3E79ABFA1B51C0C60043613C /* AddCityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCityViewController.h; sourceTree = "<group>"; };
+		3E79ABFB1B51C0C60043613C /* AddCityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCityViewController.m; sourceTree = "<group>"; };
+		3EF0B7791B523394005098EC /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,9 +99,17 @@
 			children = (
 				3E2E6CD51B51A87C000B571C /* AppDelegate.h */,
 				3E2E6CD61B51A87C000B571C /* AppDelegate.m */,
-				3E2E6CDB1B51A87C000B571C /* ViewController.h */,
-				3E2E6CDC1B51A87C000B571C /* ViewController.m */,
-				3E2E6CDE1B51A87C000B571C /* Main.storyboard */,
+				3E2E6CDB1B51A87C000B571C /* RootViewController.h */,
+				3E2E6CDC1B51A87C000B571C /* RootViewController.m */,
+				3E79ABFA1B51C0C60043613C /* AddCityViewController.h */,
+				3E79ABFB1B51C0C60043613C /* AddCityViewController.m */,
+				3EF0B7791B523394005098EC /* Main.storyboard */,
+				3E79ABF51B51B75B0043613C /* CityReaderFromFile.h */,
+				3E79ABF61B51B75B0043613C /* CityReaderFromFile.m */,
+				3E68C6C61B534BBC00451848 /* WeatherInfoDownloader.h */,
+				3E68C6C71B534BBC00451848 /* WeatherInfoDownloader.m */,
+				3E1589CB1B547EB1008ACF1E /* CustomTableViewCell.h */,
+				3E1589CC1B547EB1008ACF1E /* CustomTableViewCell.m */,
 				3E2E6CE11B51A87C000B571C /* Images.xcassets */,
 				3E2E6CE31B51A87C000B571C /* LaunchScreen.xib */,
 				3E2E6CD81B51A87C000B571C /* Clairify.xcdatamodeld */,
@@ -99,6 +121,7 @@
 		3E2E6CD11B51A87C000B571C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3E79ABF81B51BD4A0043613C /* gistfile1.txt */,
 				3E2E6CD21B51A87C000B571C /* Info.plist */,
 				3E2E6CD31B51A87C000B571C /* main.m */,
 			);
@@ -202,9 +225,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E2E6CE01B51A87C000B571C /* Main.storyboard in Resources */,
 				3E2E6CE51B51A87C000B571C /* LaunchScreen.xib in Resources */,
 				3E2E6CE21B51A87C000B571C /* Images.xcassets in Resources */,
+				3E79ABF91B51BD4B0043613C /* gistfile1.txt in Resources */,
+				3EF0B77A1B523394005098EC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,8 +248,12 @@
 			files = (
 				3E2E6CD71B51A87C000B571C /* AppDelegate.m in Sources */,
 				3E2E6CD41B51A87C000B571C /* main.m in Sources */,
-				3E2E6CDD1B51A87C000B571C /* ViewController.m in Sources */,
+				3E2E6CDD1B51A87C000B571C /* RootViewController.m in Sources */,
+				3E79ABFC1B51C0C60043613C /* AddCityViewController.m in Sources */,
+				3E68C6C81B534BBC00451848 /* WeatherInfoDownloader.m in Sources */,
 				3E2E6CDA1B51A87C000B571C /* Clairify.xcdatamodeld in Sources */,
+				3E1589CD1B547EB1008ACF1E /* CustomTableViewCell.m in Sources */,
+				3E79ABF71B51B75B0043613C /* CityReaderFromFile.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,14 +276,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		3E2E6CDE1B51A87C000B571C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3E2E6CDF1B51A87C000B571C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3E2E6CE31B51A87C000B571C /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -420,6 +440,7 @@
 				3E2E6CF61B51A87C000B571C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3E2E6CF71B51A87C000B571C /* Build configuration list for PBXNativeTarget "ClairifyTests" */ = {
 			isa = XCConfigurationList;
@@ -428,6 +449,7 @@
 				3E2E6CF91B51A87C000B571C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

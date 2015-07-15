@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface RootViewController : UIViewController
 
+@property NSString *selectedCityName;
 
 @end
 
