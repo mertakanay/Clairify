@@ -13,9 +13,9 @@
 
 @property UITableView *tableView;
 @property UISearchBar *searchBar;
-@property NSMutableArray *citiesArray;
-@property NSMutableArray *filteredCities;
-@property BOOL isFiltered;
+@property NSMutableArray *citiesArray; //the array which will include all cities
+@property NSMutableArray *filteredCities; //the array which will include names of the cities matching the filtering
+@property BOOL isFiltered; //this boolean value is defined for tracting if the searchbar is used and the cities are filtered. Displaying either filteredCities array or citiesArray will be done according to value of boolean.
 
 @end
 
@@ -25,6 +25,11 @@
 {
     [super viewDidLoad];
 
+    //customizing navigationBar
+    self.navigationItem.title = @"Clairity";
+    [self.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIFont fontWithName:@"SavoyeLetPlain" size:32], NSFontAttributeName, nil]];
+    self.navigationController.navigationBar.backgroundColor = [UIColor colorWithRed:153/255.0 green:0/255.0 blue:18/255.0 alpha:1.0];
+
     [self createTableView];
     [self createSearchBar];
     [self createBarButtons];
@@ -33,6 +38,7 @@
 }
 
 #pragma Mark - helper methods for UI creation
+//the UI elements are created here
 
 - (void)createSearchBar
 {
@@ -45,7 +51,6 @@
 
 - (void)createTableView
 {
-    //Creating the tableView programatically
     CGRect screenRect = [[UIScreen mainScreen]bounds];
     CGRect tableViewRect = CGRectMake(0, 50, screenRect.size.width, screenRect.size.height-50);
     self.tableView = [[UITableView alloc]initWithFrame:tableViewRect style:UITableViewStylePlain];
@@ -58,8 +63,11 @@
 {
     UIBarButtonItem *cancelButton = [[UIBarButtonItem alloc]initWithTitle:@"Cancel" style:UIBarButtonItemStylePlain target:self action:@selector(dismissVC)];
     self.navigationItem.rightBarButtonItem = cancelButton;
+    [cancelButton setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIFont fontWithName:@"HelveticaNeue-UltraLight" size:20],NSFontAttributeName, nil] forState:UIControlStateNormal];
+    cancelButton.tintColor = [UIColor blackColor];
 }
 
+//the method for dismissing VC is called when the tableViewCell is pressed
 - (void)dismissVC
 {
     [self dismissViewControllerAnimated:YES completion:nil];
@@ -83,6 +91,9 @@
     if (self.isFiltered == YES) {
         return self.filteredCities.count;
     }else{
+
+        //if the addCityVC is expected to show nothing at load, the below code will be returned as zero. It returns self.citiesArray.count right now as it is assumed the tableView will show all cities at initial load.
+
         return self.citiesArray.count;
 //        return 0;
     }
@@ -104,6 +115,7 @@
         cell.textLabel.text = [self.citiesArray objectAtIndex:indexPath.row];
     }
 
+    cell.textLabel.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:17];
 
     return cell;
 }
@@ -119,7 +131,7 @@
         self.selectedCity = [self.citiesArray objectAtIndex:indexPath.row];
     }
 
-    [self sendCityNameToRootVC];
+    [self sendCityToRootVC];
 
     [self dismissViewControllerAnimated:YES completion:nil];
 }
@@ -147,14 +159,18 @@
     [self.tableView reloadData];
 }
 
+//method to close keyboard when search button is clicked
 -(void)searchBarSearchButtonClicked:(UISearchBar *)searchBar
 {
     [self.searchBar resignFirstResponder];
 }
 
--(void)sendCityNameToRootVC
+//method for passing the city name data to rootVC
+-(void)sendCityToRootVC
 {
-    [self.delegate gotCityName:self.selectedCity];
+    City *theCity = [City new];
+    theCity.name = self.selectedCity;
+    [self.delegate gotCity:theCity];
 }
 
 #pragma Mark - memory management methods

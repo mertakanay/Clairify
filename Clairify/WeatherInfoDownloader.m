@@ -12,9 +12,11 @@
 
 -(void)downloadWeatherInfoForCity
 {
-    RootViewController *rootVC = [[RootViewController alloc]init];
-    self.cityName = rootVC.selectedCityName;
-    NSString *urlString = [NSString stringWithFormat:@"http://api.openweathermap.org/data/2.5/weather?q=%@&APPID=fd6005a1056726e301012796371254a4",self.cityName];
+//    RootViewController *rootVC = [[RootViewController alloc]init];
+//    self.cityName = rootVC.selectedCityName;
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSString *cityName = [defaults objectForKey:@"selectedCity"];
+    NSString *urlString = [NSString stringWithFormat:@"http://api.openweathermap.org/data/2.5/weather?q=%@&APPID=fd6005a1056726e301012796371254a4",cityName];
     NSURL *url = [NSURL URLWithString:urlString];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {

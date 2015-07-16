@@ -17,6 +17,8 @@
 
 @interface WeatherInfoDownloader : NSObject
 
++(void)readCitiesInUSWithCompletion:(void (^)(NSArray *))complete;
+
 @property NSString *cityName;
 
 @property id <WeatherInfoDownloaderDelegate>delegate;

@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "City.h"
 
 @protocol AddCityViewControllerDelegate <NSObject>
 
--(void)gotCityName:(NSString *)cityName;
+-(void)gotCity:(City *)city;
 
 @end
 
@@ -20,6 +21,6 @@
 
 @property id <AddCityViewControllerDelegate>delegate;
 
--(void)sendCityNameToRootVC;
+-(void)sendCityToRootVC;
 
 @end

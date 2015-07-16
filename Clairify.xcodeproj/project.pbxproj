@@ -15,10 +15,10 @@
 		3E2E6CE21B51A87C000B571C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E2E6CE11B51A87C000B571C /* Images.xcassets */; };
 		3E2E6CE51B51A87C000B571C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E2E6CE31B51A87C000B571C /* LaunchScreen.xib */; };
 		3E2E6CF11B51A87C000B571C /* ClairifyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E2E6CF01B51A87C000B571C /* ClairifyTests.m */; };
-		3E68C6C81B534BBC00451848 /* WeatherInfoDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E68C6C71B534BBC00451848 /* WeatherInfoDownloader.m */; };
 		3E79ABF71B51B75B0043613C /* CityReaderFromFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E79ABF61B51B75B0043613C /* CityReaderFromFile.m */; };
 		3E79ABF91B51BD4B0043613C /* gistfile1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3E79ABF81B51BD4A0043613C /* gistfile1.txt */; };
 		3E79ABFC1B51C0C60043613C /* AddCityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E79ABFB1B51C0C60043613C /* AddCityViewController.m */; };
+		3EE4466B1B57377700D9769E /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EE4466A1B57377700D9769E /* City.m */; };
 		3EF0B77A1B523394005098EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EF0B7791B523394005098EC /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -48,13 +48,13 @@
 		3E2E6CEA1B51A87C000B571C /* ClairifyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClairifyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E2E6CEF1B51A87C000B571C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E2E6CF01B51A87C000B571C /* ClairifyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClairifyTests.m; sourceTree = "<group>"; };
-		3E68C6C61B534BBC00451848 /* WeatherInfoDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherInfoDownloader.h; sourceTree = "<group>"; };
-		3E68C6C71B534BBC00451848 /* WeatherInfoDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherInfoDownloader.m; sourceTree = "<group>"; };
 		3E79ABF51B51B75B0043613C /* CityReaderFromFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityReaderFromFile.h; sourceTree = "<group>"; };
 		3E79ABF61B51B75B0043613C /* CityReaderFromFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityReaderFromFile.m; sourceTree = "<group>"; };
 		3E79ABF81B51BD4A0043613C /* gistfile1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gistfile1.txt; sourceTree = "<group>"; };
 		3E79ABFA1B51C0C60043613C /* AddCityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCityViewController.h; sourceTree = "<group>"; };
 		3E79ABFB1B51C0C60043613C /* AddCityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCityViewController.m; sourceTree = "<group>"; };
+		3EE446691B57377700D9769E /* City.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = City.h; sourceTree = "<group>"; };
+		3EE4466A1B57377700D9769E /* City.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = City.m; sourceTree = "<group>"; };
 		3EF0B7791B523394005098EC /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -106,10 +106,10 @@
 				3EF0B7791B523394005098EC /* Main.storyboard */,
 				3E79ABF51B51B75B0043613C /* CityReaderFromFile.h */,
 				3E79ABF61B51B75B0043613C /* CityReaderFromFile.m */,
-				3E68C6C61B534BBC00451848 /* WeatherInfoDownloader.h */,
-				3E68C6C71B534BBC00451848 /* WeatherInfoDownloader.m */,
 				3E1589CB1B547EB1008ACF1E /* CustomTableViewCell.h */,
 				3E1589CC1B547EB1008ACF1E /* CustomTableViewCell.m */,
+				3EE446691B57377700D9769E /* City.h */,
+				3EE4466A1B57377700D9769E /* City.m */,
 				3E2E6CE11B51A87C000B571C /* Images.xcassets */,
 				3E2E6CE31B51A87C000B571C /* LaunchScreen.xib */,
 				3E2E6CD81B51A87C000B571C /* Clairify.xcdatamodeld */,
@@ -248,9 +248,9 @@
 			files = (
 				3E2E6CD71B51A87C000B571C /* AppDelegate.m in Sources */,
 				3E2E6CD41B51A87C000B571C /* main.m in Sources */,
+				3EE4466B1B57377700D9769E /* City.m in Sources */,
 				3E2E6CDD1B51A87C000B571C /* RootViewController.m in Sources */,
 				3E79ABFC1B51C0C60043613C /* AddCityViewController.m in Sources */,
-				3E68C6C81B534BBC00451848 /* WeatherInfoDownloader.m in Sources */,
 				3E2E6CDA1B51A87C000B571C /* Clairify.xcdatamodeld in Sources */,
 				3E1589CD1B547EB1008ACF1E /* CustomTableViewCell.m in Sources */,
 				3E79ABF71B51B75B0043613C /* CityReaderFromFile.m in Sources */,

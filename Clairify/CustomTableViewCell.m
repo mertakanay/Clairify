@@ -51,6 +51,11 @@
     return self;
 }
 
+- (void)dealloc
+{
+
+}
+
 - (void)awakeFromNib {
     // Initialization code
 }

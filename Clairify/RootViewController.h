@@ -10,7 +10,5 @@
 
 @interface RootViewController : UIViewController
 
-@property NSString *selectedCityName;
-
 @end
 

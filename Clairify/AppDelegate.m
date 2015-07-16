@@ -19,6 +19,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
+    //programmatically creating the navigation controller
     RootViewController *rootVC = [[RootViewController alloc]init];
     UINavigationController *navVC = [[UINavigationController alloc]initWithRootViewController:rootVC];
     [self.window makeKeyAndVisible];
