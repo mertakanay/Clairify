@@ -98,7 +98,7 @@
 
         if (self.expandedCellIndex == indexPath.row) {
 
-            //not to pull down unnecessary data from the API, downloading only for the cell which is expanded is wanted
+            //not to pull down unnecessary data from the API, downloading only for the cell which is expanded is wanted and using asynchronous main queue download instead of background as this is a minor app
             NSString *cityNameString = [theCity.name stringByReplacingOccurrencesOfString:@" " withString:@"_"];
             NSString *urlString = [NSString stringWithFormat:@"http://api.openweathermap.org/data/2.5/weather?q=%@&APPID=fd6005a1056726e301012796371254a4",cityNameString];
             NSURL *url = [NSURL URLWithString:urlString];
